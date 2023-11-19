@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.App {
+  /* width: 100vw;
+  height: 100vh; */
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+
+.container {
+  display: block;
+  width: 1028px;
+  margin: 0 auto;
+}
+
+
+section h3 {
+  color: #2699FB;
+  font-size: 45px;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin-top: 47px;
+}
+
+section .sub-title {
+  margin-top: 25px;
+  font-size: 25px;
+  line-height: 33px;
+  font-weight: bold;
+  color: #2699FB;
+}
+
+section .sub-title-2 {
+  margin-top: 11px;
+  font-size: 25px;
+  line-height: 33px;
+  color: #2699FB;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+
+  .container {
+    width: 335px;
+    margin: 0 auto;
+  }
+
+  section h3{
+    font-size: 25px;
+    line-height: 33px;
+    text-transform: none;
+    margin-top: 15px;
+}
+  
+}
+
+

@@ -1,0 +1,20 @@
+
+
+.contact .contact__live-avt {
+    margin-top: 30px;
+}
+.contact__slide-card {
+    margin-top: 30px;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+    
+
+    .contact .sub-title {
+        display: none;
+    }
+
+    .contact .contact__live-avt {
+        margin-top: 21.4px;
+    }
+}

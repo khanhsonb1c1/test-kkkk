@@ -1,0 +1,72 @@
+.input-field {
+    border-radius: 8px;
+    border: 1px solid #2699FB;
+    margin-bottom: 9px;
+}
+
+.input-field input {
+    padding: 8px 0 8px 10px;
+    line-height: 16px;
+    font-size: 12px;
+    width: 100%;
+    background: none;
+    color: #2699FB;
+
+}
+
+.input-field input::placeholder {
+    color: #2699FB;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+
+
+.input-select select {
+    padding: 8px 0 8px 10px;
+    line-height: 16px;
+    font-size: 12px;
+    width: 100%;
+    background: none;
+    color: #2699FB;
+}
+
+.input-checkbox {
+    display: flex;
+    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 14px;
+
+}
+
+
+.input-checkbox input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #2699FB;
+    border-radius: 1px;
+    margin-right: 8px;
+    outline: none;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+}
+
+.input-checkbox input:checked {
+    background-color: #2699FB; /* Màu nền khi ô checkbox được chọn */
+    border: 1px solid #2699FB; /* Cập nhật lại màu viền nếu cần thiết */
+  }
+
+  .input-checkbox input:checked::before {
+    content: '\2713'; /* Ký tự Unicode cho dấu tích (checkmark) */
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
