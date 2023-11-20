@@ -50,7 +50,7 @@ function SlideGameContent(props: any) {
         <div className='slide-game-content'>
         <div className="slide-game-content-wrap"  ref={slidesWrapRef}>
             <div className="slides">
-                {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
+                {[1, 2, 3, 4, 5, 6, 7, 10].map((_, index) => (
                     <div
                         key={index}
                         className="item-content"
