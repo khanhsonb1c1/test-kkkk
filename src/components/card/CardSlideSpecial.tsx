@@ -9,8 +9,10 @@ function CardSlideSpecial(props: any) {
             <div className="card__default-img">
             <Placeholder/>
             </div>
-            <div className="card__default-content">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+            <div className="card__special-content">
+                <div className="card__special-title">
+                    <h3>Short title here</h3>
+                </div>
             </div>
 
            

@@ -3,20 +3,29 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import "./style.css"
 
-import CardSlideDefault from '../card/CardSlideDefault';
 import CardSlideSpecial from '../card/CardSlideSpecial';
+import Pagination from '../../assets/image/Pagination';
 
 
 function SlideSpecial(props: any) {
     const slidesWrapRef = useRef(null) as any;
     const [centeredItemIndex, setCenteredItemIndex] = useState(0);
 
+    // useEffect(() => {
+    //     // Đặt giá trị scroll ban đầu tại đây
+    //     if (slidesWrapRef.current) {
+    //         slidesWrapRef.current.scrollLeft = 30; // Giá trị tùy chọn cho scrollLeft
+    //     }
+    //   }, []);
+
     useEffect(() => {
-        // Đặt giá trị scroll ban đầu tại đây
         if (slidesWrapRef.current) {
-            slidesWrapRef.current.scrollLeft = 30; // Giá trị tùy chọn cho scrollLeft
+            const widthItem = (document.querySelector('.item-special') as HTMLElement)?.offsetWidth + 17;
+            const totalWidth = widthItem * 8; // Adjust this based on the number of items
+            const centerPosition = (totalWidth - window.innerWidth) / 2;
+            slidesWrapRef.current.scrollLeft = centerPosition;
         }
-      }, []);
+    }, []);
 
     const handleScroll = () => {
         if (slidesWrapRef.current) {
@@ -70,7 +79,7 @@ function SlideSpecial(props: any) {
             </div>
 
             <div className="slide__special-btns">
-               
+               <Pagination/>
             </div>
 
 

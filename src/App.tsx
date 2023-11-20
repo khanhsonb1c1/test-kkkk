@@ -6,6 +6,7 @@ import Register from "./features/register";
 import UpdateUser from "./features/update";
 import HomePage from "./features/home";
 import Login from "./features/login";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/update-user" element={<UpdateUser />} />
             <Route path="/login" element={<Login />} />
           </Routes>
+          <Footer/>
       </div>
     </div>
   );

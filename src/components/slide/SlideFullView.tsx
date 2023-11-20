@@ -10,12 +10,21 @@ import PrevArrow from '../../assets/image/button/PreviousArrow';
 function SlideFull(props: any) {
     const slidesWrapRef = useRef(null) as any;
 
+    // useEffect(() => {
+    //     // Đặt giá trị scroll ban đầu tại đây
+    //     if (slidesWrapRef.current) {
+    //         slidesWrapRef.current.scrollLeft = 30; // Giá trị tùy chọn cho scrollLeft
+    //     }
+    //   }, []);
+
     useEffect(() => {
-        // Đặt giá trị scroll ban đầu tại đây
         if (slidesWrapRef.current) {
-            slidesWrapRef.current.scrollLeft = 30; // Giá trị tùy chọn cho scrollLeft
+            const widthItem = (document.querySelector('.item-full') as HTMLElement)?.offsetWidth + 17;
+            const totalWidth = widthItem * 8; // Adjust this based on the number of items
+            const centerPosition = (totalWidth - window.innerWidth) / 2;
+            slidesWrapRef.current.scrollLeft = centerPosition;
         }
-      }, []);
+    }, []);
 
  
 
@@ -49,6 +58,10 @@ function SlideFull(props: any) {
                         <CardSlideDefault />
                     </div>
                 ))}
+            </div>
+
+            <div className="viewmore">
+                <div className="viewmore-btn">More</div>
             </div>
         </div>
 
