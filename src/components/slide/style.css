@@ -141,6 +141,44 @@
     margin-right: 33px;
 }
 
+
+
+
+/* slide special */
+
+.slide__special .item-special {
+    margin-right: 17px;
+    width: 331px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.slide__special .slides {
+    display: flex;
+    width: max-content;
+}
+
+.slide__special-wrap {
+    max-width: 100%;
+    overflow: auto;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+
+.slide__special-wrap::-webkit-scrollbar{
+    display: none;
+}
+
+
+.slide__special-wrap .active {
+    width: 400px;
+    margin-top: 0;
+    margin-bottom: 0;
+   
+}
+
+
+
+
 @media only screen and (min-width: 321px) and (max-width: 375px) {
 
     .slide-live svg {

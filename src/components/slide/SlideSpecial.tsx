@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import "./style.css"
 
 import CardSlideDefault from '../card/CardSlideDefault';
+import CardSlideSpecial from '../card/CardSlideSpecial';
 
 
 function SlideSpecial(props: any) {
@@ -20,7 +21,7 @@ function SlideSpecial(props: any) {
     const handleScroll = () => {
         if (slidesWrapRef.current) {
             const containerRect = slidesWrapRef.current.getBoundingClientRect();
-            const items = slidesWrapRef.current.querySelectorAll('.item-full');
+            const items = slidesWrapRef.current.querySelectorAll('.item-special');
 
             items.forEach((item: any, index: any) => {
                 const itemRect = item.getBoundingClientRect();
@@ -56,16 +57,14 @@ function SlideSpecial(props: any) {
 
             <div className="slide__special-wrap" id='slides-wrap' ref={slidesWrapRef}>
                 <div className="slides" id='slides'>
-                <div className="slides" id='slides'>
                 {[1, 2, 3, 4, 5, 6, 7, 8].map((_, index) => (
                     <div
                         key={index}
                         className={`item-special ${centeredItemIndex === index ? 'active' : ''}`}
                     >
-                        <CardSlideDefault />
+                        <CardSlideSpecial />
                     </div>
                 ))}
-            </div>
                  
                 </div>
             </div>

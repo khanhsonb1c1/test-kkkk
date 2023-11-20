@@ -8,6 +8,7 @@ import Dowload from './dowload';
 import SignUp from './signup';
 import Contact from './contact';
 import SpecialComponent from './special-event';
+import GameContent from './game-content';
 //style
 // import { Wrap } from './index.styles';
 
@@ -19,6 +20,7 @@ function HomePage() {
               <SignUp/>
               <Contact/>
              <SpecialComponent/>
+             <GameContent/>
         </div>
     );
 }
